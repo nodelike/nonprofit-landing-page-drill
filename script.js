@@ -23,4 +23,4 @@ pageSelectors.forEach((selector, index) => {
 setInterval(() => {
   currentPage = (currentPage + 1) % pages.length;
   updateCarousel();
-}, 5000);
+}, 8000);
