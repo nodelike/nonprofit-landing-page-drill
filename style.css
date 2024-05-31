@@ -1,28 +1,29 @@
 @font-face {
     font-family: "floor-std";
     src: url(./assets/Flood\ Std\ Regular.otf);
-}
-
-:root{
+ }
+ 
+ :root{
     --primary-color: #c1f7d5;
     --secondary-color: #354463;
-}
-
-* {
+ }
+ 
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     color: var(--secondary-color);
-}
-
-
-.logo{
+ }
+ 
+ 
+ .logo{
     width: 170px;
+    font-size: 24px;
     line-height: 30px;
-}
-
-button{
+ }
+ 
+ button{
     font-family: sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -32,51 +33,51 @@ button{
     border-radius: 30px;
     cursor: pointer;
     transition: 0.2s ease;
-}
-
-button:hover{
+ }
+ 
+ button:hover{
     background-color: var(--secondary-color);
     color: var(--primary-color);
-}
-
-header{
+ }
+ 
+ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 35px 0;
-}
-
-
-
-header .nav-links{
+ }
+ 
+ 
+ 
+ header .nav-links{
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: black;
     text-decoration: none;
-}
-
-.nav-links a{
+ }
+ 
+ .nav-links a{
     text-decoration: none;
-}
-
-header button{
+ }
+ 
+ header button{
     padding: 15px 25px;
-}
-
-/* -------------- HERO SECTION ----------------- */
-
-.container{
+ }
+ 
+ /* -------------- HERO SECTION ----------------- */
+ 
+ .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1140px;
     margin: 0 auto;
     padding: 0 10px;
-}
-
-.tag{
+ }
+ 
+ .tag{
     position: absolute;
     background: var(--secondary-color);
     color: white;
@@ -86,9 +87,9 @@ header button{
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-}
-
-.hero-section{
+ }
+ 
+ .hero-section{
     background-image: linear-gradient(180deg, rgba(53, 68, 99, 0.4), rgba(53, 68, 99, 0.4)),url(./assets/home/annie-spratt-135307-unsplash.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -96,7 +97,7 @@ header button{
     padding: 130px 0px;
     display: flex;
     justify-content: center;
-
+ 
     .text-box{
         position: relative;
         background: white;
@@ -107,7 +108,7 @@ header button{
         gap: 40px;
     }
     
-    .text-box h1{
+    .text-box h2{
         font-size: 40px;
         line-height: 55px;
     }
@@ -129,21 +130,21 @@ header button{
         padding-left: 100px;
     }
     
-    .caption-box h1{
+    .caption-box h2{
         font-family: 'floor-std';
         display: table-caption;
         font-size: 65px;
         color: white;
     }
-}
-
-/* -------------------- ACTION SECTION -------------------- */
-
-.action-section{
+ }
+ 
+ /* -------------------- ACTION SECTION -------------------- */
+ 
+ .action-section{
     position: relative;
     padding: 75px 0;
     background-color: var(--primary-color);
-
+ 
     .container{
         display: flex;
         gap: 40px;
@@ -189,20 +190,19 @@ header button{
     .action > p{
         line-height: 26px;
     }
-}
-
-/* -------------------- MISSION SECTION -------------------- */
-
-.mission-section{
+ }
+ 
+ /* -------------------- MISSION SECTION -------------------- */
+ 
+ .mission-section{
     height: 1100px;
     padding: 88px 0;
     padding-bottom: 168px;
     background-color: var(--secondary-color);
-
+ 
     .container{
         height: 100%;
         flex-direction: column;
-        /* justify-content: space-between; */
         align-items: start;
     }
     
@@ -212,17 +212,17 @@ header button{
         color: var(--secondary-color);
     }
     
-    .container > h1{
+    .container > h2{
         font-size: 41px;
         color: white;
         line-height: 55px;
         margin-bottom: 35px;
     }
-}
-
-
-
-.card-container{
+ }
+ 
+ 
+ 
+ .card-container{
     display: flex;
     justify-content: space-between;
     
@@ -245,15 +245,15 @@ header button{
         background-size: cover;
         border: none;
     }
-
+ 
     .card:nth-child(1) .img{
         background-image: url(assets/home/tree-planting.png);
     }
-
+ 
     .card:nth-child(2) .img{
         background-image: url(assets/home/education-training.png);
     }
-
+ 
     .card:nth-child(3) .img{
         background-image: url(assets/home/advocacy.png);
     }
@@ -267,7 +267,7 @@ header button{
         padding: 35px 30px;
     }
     
-    .content h2{
+    .content h3{
         font-size: 28px;
         line-height: 38px;
     }
@@ -275,17 +275,21 @@ header button{
     .content p{
         line-height: 25px;
     }
-}
-
-/* -------------------- STATS SECTION -------------------- */
-
-.stats-section{
+ }
+ 
+ /* -------------------- STATS SECTION -------------------- */
+ 
+ .stats-section{
     background-image: url(./assets/home/did-you-know-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 120px 0;
 
+    .container{
+        align-items: start;
+    }
+ 
     .title-box{
         display: flex;
         flex-direction: column;
@@ -294,7 +298,7 @@ header button{
         width: 40%;
     }
     
-    .title-box h1{
+    .title-box h2{
         font-family: 'floor-std';
         font-size: 72px;
         line-height: 76px;
@@ -326,21 +330,21 @@ header button{
         flex-direction: column;
         gap: 10px;
     }
-
-    .content h1{
+ 
+    .content p:first-child{
         font-size: 44px;
     }
-
-    .content p{
+ 
+    .content p:last-child{
         line-height: 24px;
     }
-
+ 
     .links{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
+ 
     .links .img{
         height: 32px;
         width: 32px;
@@ -351,35 +355,35 @@ header button{
         border: 2px solid var(--primary-color);
         border-radius: 50%;
     }
-
+ 
     .links .img.twitter{
         background-image: url(./assets/home/iconmonstr-twitter-1.png);
     }
-
+ 
     .links .img.facebook{
         background-size: 8px 16px;
         background-image: url(./assets/home/iconmonstr-facebook-1.png);
     }
-}
-
-/* -------------------- STORY SECTION -------------------- */
-
-.story-section{
+ }
+ 
+ /* -------------------- STORY SECTION -------------------- */
+ 
+ .story-section{
     background-color: white;
     padding: 135px 0;
-
+ 
     .tag{
         left: 52.5%;
         transform: translateY(-50%);
         z-index: 2;
     }
-
+ 
     .container{
         position: relative;
         align-items: start;
         flex-direction: column;
     }
-
+ 
     .sliding-window {
         display: flex;
         width: 100%;
@@ -387,14 +391,14 @@ header button{
         overflow-x: hidden;
         position: relative;
     }
-
+ 
     .page {
         display: flex;
         width: 100%;
         flex-shrink: 0;
         transition: transform 0.5s ease-in-out;
     }
-
+ 
     .page .content{
         background-color: var(--secondary-color);
         position: absolute;
@@ -408,7 +412,7 @@ header button{
         padding: 60px;
         z-index: 1;
     }
-
+ 
     .page .img{
         background-image: url(assets/home/lady-baby.png);
         background-repeat: no-repeat;
@@ -420,60 +424,60 @@ header button{
         height: 100%;
         z-index: -1;
     }
-
-    .content h2{
+ 
+    blockquote{
         font-size: 26px;
         line-height: 34px;
         color: white;
     }
-
+ 
     .content p{
         font-size: 14px;
         color: white;
     }
-
-
+ 
+ 
     .sliding-window.active .page {
         transform: translateX(-100%);
     }
-
+ 
     .page-selection{
         position: absolute;
         display: flex;
         top: 0;
         gap: 10px;
     }
-
+ 
     .page-select{
         width: 20px;
         height: 20px;
         background-color: gray;
         cursor: pointer;
     }
-
+ 
     .page-select.active{
         background-color: black;
     }
-
+ 
     .container button{
         position: absolute;
         bottom: 0;
         left: 0;
     }
-}
-
-/* -------------------- NEWS SECTION -------------------- */
-
-.news-section{
+ }
+ 
+ /* -------------------- NEWS SECTION -------------------- */
+ 
+ .news-section{
     background-color: var(--secondary-color);
     padding: 120px 0;
-
+ 
     .container {
         flex-direction: column;
         gap: 110px;
     }
-
-    .container h1{
+ 
+    .container h2{
         font-family: 'floor-std';
         font-size: 72px;
         color: white;
@@ -483,7 +487,7 @@ header button{
         display: flex;
         align-items: start;
     }
-
+ 
     .news-card .img{
         height: 500px;
         width: 50%;
@@ -491,15 +495,15 @@ header button{
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+ 
     .news-card .img:nth-child(1){
         background-image: url(assets/home/tree-planting.png);
     }
-
+ 
     .news-card .img:nth-child(2){
         background-image: url(assets/home/meeting.png);
     }
-
+ 
     .content{
         display: flex;
         width: 50%;
@@ -509,69 +513,77 @@ header button{
         padding-bottom: 50px;
         gap: 40px;
     }
-
+ 
     .content:nth-child(1){
         padding-left: 0;
         padding-right: 95px;
     }
-
+ 
     .content .tag{
         background-color: white;
         color: var(--secondary-color);
         position: static;
     }
-
-    .content h2{
+ 
+    .content h3{
         font-size: 44px;
         color: white;
     }
-
+ 
     .content p:nth-child(3){
         font-size: 20px;
         line-height: 32px;
         color: white;
     }
-}
-
-/* -------------------- NEWSLETTER SECTION -------------------- */
-
-.newsletter-section{
+ }
+ 
+ /* -------------------- NEWSLETTER SECTION -------------------- */
+ 
+ .newsletter-section{
     padding: 70px 0;
     background-color: var(--primary-color);
-
+ 
     .container{
         align-items: center;
+        gap: 15px;
     }
-
+ 
     .container h2{
         font-size: 28px;
         line-height: 36px;
         width: 50%;
     }
-
+ 
+    form {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        gap: 15px;
+    }
+ 
     .container input{
         border: none;
         border-radius: 50px;
         padding: 0 30px;
         font-size: 17px;
-        width: 30%;
+        width: 70%;
         height: 48px;
     }
-
+ 
     .container button{
         color: white;
         background-color: var(--secondary-color);
     }
-
+ 
     .container button:hover{
         background-color: white;
         color: var(--secondary-color);
     }
-}
-
-/* -------------------- FOOTER SECTION -------------------- */
-
-footer{
+ }
+ 
+ /* -------------------- FOOTER SECTION -------------------- */
+ 
+ footer{
     padding: 115px 0;
     
     .links-container{
@@ -579,15 +591,15 @@ footer{
         justify-content: space-between;
         width: 60%;
     }
-
+ 
     .link-card{
         display: flex;
         width: 25%;
         flex-direction: column;
         gap: 10px;
     }
-
-    .link-card h5{
+ 
+    .link-card h4{
         font-size: 14px;
         font-weight: 500;
         line-height: 18px;
@@ -595,19 +607,19 @@ footer{
         padding-bottom: 7px;
         margin-bottom: 7px;
         border-bottom: 1px solid var(--secondary-color);
-
+ 
     }
-
+ 
     .link-card a, .link-card p{
         font-size: 14px;
         text-decoration: none;
         transition: 0.2s ease-in-out;
     }
-
+ 
     .link-card a:hover {
         color: underline;
     }
-
+ 
     .footer-caption h2{
         display: table-caption;
         font-family: 'floor-std';
@@ -615,37 +627,38 @@ footer{
         line-height: 46px;
         text-align: right;
     }
-
-}
-
-
-@media (max-width: 1000px){
-
+ 
+ }
+ 
+ 
+ 
+ @media (max-width: 1000px){
+ 
     .container {
         width: 660px;
     }
-
+ 
     header{
         padding: 25px 0;
-
+ 
         .container{
             display: grid;
             grid-template-columns: 50% 30%;
             gap: 20px 0;
     
         }
-
-        .container h2{
+ 
+        .container h1{
             grid-column: 1;
             grid-row: 1;
         }
-    
+
         .container .nav-links{
             grid-column: 1;
             grid-row: 2;
             width: 100%;
         }
-
+    
         .nav-links a{
             width: 100%;
         }
@@ -656,119 +669,119 @@ footer{
             padding: 15px 15px;
         }
     }
-
+    
     .hero-section{
         padding: 80px 0;
-
+    
         .container{
             flex-direction: column-reverse;
             gap: 80px;
         }
-
+    
         .container > div{
             width: 100%;
         }
-
+    
         .text-box{
             padding: 76px;
         }
-
-        .text-box h1{
+    
+        .text-box h2{
             font-size: 28px;
             line-height: 36px;
         }
-
+    
         .caption-box{
             padding: 0;
         }
     }
-
+    
     .action-section{
         padding: 60px 0;
-
+    
         .container{
             display: grid;
             grid-template-columns: 40% 40%;
         }
     }
-
+    
     .mission-section{
         height: auto;
         padding: 56px 0;
-
+    
         .container{
             gap: 60px;
         }
-
-        .container h1{
+    
+        .container h2{
             font-size: 28px;
             line-height: 36px;
         }
-
+    
         .card-container{
             flex-direction: column;
             gap: 100px;
         }
-
+    
         .card{
             height: 420px;
             width: 90%;
         }
-
+    
         .card .img{
             height: 320px;
             margin-left: 10%
         }
-
+    
     }
-
+    
     .stats-section{
         padding: 74px 0;
-
-        .title-box h1{
+    
+        .title-box h2{
             font-size: 44px;
             line-height: 46px;
         }
-
+    
         .title-box{
             width: 30%;
         }
-
+    
         .card-section{
             width: 65%;
         }
-
+    
         .card{
             padding: 30px 32px;
             justify-content: start;
             gap: 40px;
         }
-
-        .content h1{
+    
+        .content p:first-child{
             font-size: 28px;
         }
     }
-
+    
     .story-section{
         padding: 110px 0;
-
+    
         .container{
             gap: 40px;
             align-items: center;
         }
-
+    
         .tag{
             position: initial;
             transform: translate(0%, 0%);
         }
-
+    
         .sliding-window{
             height: 700px;
         }
         .page{
             flex-direction: column;
         }
-
+    
         .page .content{
             top: auto;
             transform: translateY(0%);
@@ -776,18 +789,18 @@ footer{
             right: 0;
             width: 85%;        
         }
-
-        .content h2{
+    
+        blockquote{
             font-size: 22px;
             line-height: 28px;
         }
-
+    
         .page .img{
             width: 85%;
             left: 0;
             margin-left: 0;
         }
-
+    
         .page-selection{
             position: relative;
         }
@@ -797,30 +810,30 @@ footer{
         }
         
     }
-
+    
     .news-section{
-
+    
         .container{
             gap: 70px;
         }
-
-        .container h1{
+    
+        .container h2{
             font-size: 44px;
             line-height: 46px;
             text-align: center;
         }
-
+    
         .news-card .img{
             width: 50%;
             height: 300px;
         }
-
-        .content h2{
+    
+        .content h3{
             font-size: 28px;
             line-height: 36px;
             color: white;
         }
-
+    
         .content{
             padding-left: 32px;
         }
@@ -829,31 +842,35 @@ footer{
             padding-left: 0;
             padding-right: 32px;
         }
-
+    
         .content p:nth-child(3){
             font-size: 16px;
             line-height: 24px;
         }
     }
-
+    
     .newsletter-section{
-
+    
         .container{
-            display: grid;
-            grid-template-columns: 60% 30%;
+            display: flex;
+            flex-direction: column;
             gap: 40px;
         }
-
+    
         .container h2{
             width: 100%;
             grid-column: 1 / span 2;
         }
-
+    
         .container input{
+            width: 70%;
+        }
+    
+        form {
             width: 100%;
         }
     }
-
+    
     footer{
         padding: 56px 0;
         
@@ -861,28 +878,28 @@ footer{
             flex-direction: column;
             gap: 32px;
         }
-
+    
         .links-container{
             width: 100%;
             
             justify-content: center;
         }
-
+    
         .link-card{
             width: 100%;
             align-items: center;
         }
-
-        .link-card h5{
+    
+        .link-card h4{
             width: 100%;
             text-align: center;
         }
-
+    
         .footer-caption {
             display: flex;
             justify-content: end;
         }
-
+    
         .footer-caption h2{
             align-self: flex-end;
             width: 180px;
@@ -891,18 +908,20 @@ footer{
 }
 
 @media (max-width: 480px){
-
+    .container{
+        padding: 0 15px;
+    }
     header{
         padding: 25px 0;
-
+    
         .container{
             display: grid;
             grid-template-columns: 50% 35%;
             gap: 20px 0;
     
         }
-
-        .container h2{
+    
+        .container h1{
             margin: 0 auto;
             grid-column: 1;
             grid-row: 1;
@@ -918,7 +937,7 @@ footer{
             gap: 15px;
             width: 100%;
         }
-
+    
         .nav-links a{
             width: 100%;
         }
@@ -931,125 +950,125 @@ footer{
             margin: 0 auto;
         }
     }
-
+    
     .hero-section{
         padding: 80px 0;
         background-position: 0px 0px, 100% 50%;
-
+    
         .container{
             gap: 80px;
         }
-
+    
         .text-box{
             padding: 50px 30px 30px;
             gap: 40px;
         }
-
+    
         .text-box > p{
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
-        .text-box h1{
+    
+        .text-box h2{
             text-align: center;
         }
-
-        .caption-box h1{
+    
+        .caption-box h2{
             font-size: 44px;
             line-height: 46px;
         }
     }
-
+    
     .action-section{
         padding: 60px 0;
-
+    
         .container{
             display: grid;
             width: 100%;
             grid-template-columns: 50% 45%;
             gap: 20px;
         }
-
+    
         .action > a{
             font-size: 18px;
             line-height: 22px;
         }
-
+    
         .action > p{
             font-size: 14px;
             line-height: 20px;
         }
     }
-
+    
     .mission-section{
-
+    
         .container{
             width: 100%;
         }
-
-        .container h1{
+    
+        .container h2{
             text-align: center;
             font-size: 22px;
             line-height: 28px;
         }
-
+    
         .container > p{
             position: inherit;
             margin: 0 auto;
         }
-
+    
         .card{
             width: 100%;
         }
-
+    
         .card .img{
             width: 80%;
             height: 320px;
             margin: 0 auto;
             margin-top: -30px;
         }
-
+    
         .content{
             gap: 15px;
         }
-
+    
         .content button{
             margin: 0 auto;
         }
-
-        .content h2{
+    
+        .content h3{
             font-size: 18px;
             margin: 0 auto;
         }
-
+    
         .content p{
             text-align: center;
         }
-
+    
     }
-
+    
     .stats-section{
-
+    
         .container{
             width: 100%;
             flex-direction: column;
             gap: 60px;
         }
-
+    
         .title-box{
             width: 80%;
         }
-
+    
         .card-section{
             width: 100%;
         }
-
+    
         .card-section .tag{
             left: 50%;
             width: 220px;
             transform: translate(-50%, -50%);
         }
-
+    
         .card{
             padding: 50px 30px;
             gap: 30px;
@@ -1058,56 +1077,56 @@ footer{
             align-items: center;
             justify-content: center;
         }
-
+    
         .content{
             align-items: center;
             gap: 30px;
         }
-
-        .content h1{
+    
+        .content p:first-child{
             font-size: 22px;
         }
-
-        .content p{
+    
+        .content p:last-child{
             text-align: center;
         }
-
+    
         .links{
             flex-direction: row;
             gap: 15px;
         }
     }
-
+    
     .story-section{
         padding: 60px 0;
-
+    
         .container{
             width: 100%;
         }
-
+    
         .sliding-window{
             height: 650px;
         }
         .page{
             flex-direction: column;
         }
-
+    
         .page .content{
             padding: 30px 32px;
             width: 100%;        
         }
-
+    
         .content{
             text-align: center;
         }
-
+    
         .page .img{
             background-size: contain;
             left: 0;
             width: 100%;
             height: 60%;
         }
-
+    
         .page-selection{
             position: relative;
         }
@@ -1117,96 +1136,103 @@ footer{
         }
         
     }
-
+    
     .news-section{
         padding: 77px 0;
-
+    
         .container{
             width: 100%;
             gap: 70px;
         }
-
+    
         .news-card{
             flex-direction: column;
         }
-
+    
         .news-card .tag{
             transform: translateY(-50%);
         }
-
+    
         .news-card .img{
             width: 100%;
         }
-
+    
         .content{
             width: 100%;
             padding: 0 !important;
             align-items: center;
             text-align: center;
         }
-
-        .content h2{
+    
+        .content h3{
             font-size: 22px;
             line-height: 28px;
         }
-
+    
         .news-card:nth-child(3){
             flex-direction: column-reverse;
         }
-
-
+    
+    
     }
-
+    
     .newsletter-section{
-
+    
         .container{
             width: 100%;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-
+    
         .container h2{
             font-size: 18px;
             line-height: 22px;
         }
-
+    
         .container input{
-            width: 100%;
+            width: 70%;
         }
-
+    
         .container button{
+            font-size: 14px;
+            padding: 16px 18px;
+            width: 30%;
+        }
+    
+        form {
+            gap: 20px;
             width: 100%;
         }
     }
-
+    
     footer{
         padding: 56px 0;
         
         .container{
             width: 100%;
-            align-items: start;
+            align-items: center;
         }
 
+        .logo{
+            text-align: center;
+        }
+    
         .links-container{
             flex-direction: column;
             justify-content: center;
             gap: 40px;
         }
-
-        .link-card{
-            align-items: start;
-        }
-
-        .link-card h5{
+    
+    
+        .link-card h4{
             width: 50%;
-            text-align: left;
         }
-
+    
         .footer-caption {
             justify-content: start;
         }
-
+    
         .footer-caption h2{
             text-align: center;
             width: 180px;
